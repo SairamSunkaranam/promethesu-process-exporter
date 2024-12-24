@@ -5,3 +5,4 @@
 4. Make sure to add the target mentioned in the prometheus-configuration in the /etc/prometheus/prometheus.yml
 5. Restart the prometheus -> systemctl restart prometheus
 6. Also, make sure to allow port 8000 in the inbound of target server security group from the promethues server
+7. Once all the above is done, please run "curl -i http://localhost:8000/metrics, it must list the process related metrics at the end of the page of target server. 
